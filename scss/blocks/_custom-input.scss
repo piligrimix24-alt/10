@@ -1,0 +1,30 @@
+.custom-input {
+  position: relative;
+  $root: &;
+
+  &__field {
+    border: 1px solid transparent;
+    background-color: rgba($color-jaguar, 0.05);
+    border-radius: 200px;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    transition: background-color 0.2s ease-in;
+
+    &::placeholder {
+      color: rgba($color-jaguar, 0.3);
+    }
+
+    &--error {
+      border-color: $color-orange-red;
+      background-color: rgba(235, 55, 2, 0.05);
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: rgba($color-jaguar, 0.1);
+    }
+  }
+}
